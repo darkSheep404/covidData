@@ -1,0 +1,27 @@
+/* miniprogram/pages/ccp/index.wxss */
+.box{
+  
+  height: 100%;
+  background-color: #100c2a;
+}
+.motto-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+}
+.motto{
+  margin-bottom: 20px;
+}
+image{
+  width: 202px;
+  height: 270px;
+  bottom: 50px;
+  margin-bottom: 25px;
+}
+page{
+  height: 100%;
+}

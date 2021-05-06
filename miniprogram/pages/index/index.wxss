@@ -1,1 +1,122 @@
 /* miniprogram/pages/index/index.wxss */
+.tips {
+  text-align: center;
+  color: white;
+  margin-top: -50px;
+}
+
+.title {
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+  /* top: 0%;
+   bottom: 0;
+   margin:auto; */
+}
+
+.header {
+  text-align: center;
+  color: white;
+ height: 300px;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.sudocontainer {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+
+.chartcontainer {
+  width: 240px;
+  height: 240px;
+  background-color: #100c2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: #100c2a;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* 全局 */
+page {
+  background: #100c2a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+/* 下方 */
+.mid {
+  display: flex;/* 左右布局*/
+  flex: 1;
+  color: white;
+  margin-bottom: 10px;
+  /* 自由伸长到底部 */
+}
+/* 左侧两栏 */
+
+.left {
+  margin-left: 5px;
+  /* flex: 0 0 auto;页面权重设置 */
+  /* flex:0;右侧设置1自由伸长 设置0后容器内部元素长宽不足时会被挤压 */
+  width: 200px;
+  /* 对子元素 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 内部垂直轴方向居中 */
+  justify-content: center;
+  /* 内部元素沿轴方向居中 */
+}
+/*  */
+.right {
+  /* flex: 1 1 auto; */
+  flex:1;
+  /* 右侧自由伸长 */
+  margin-left: 10px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.condition{
+  /* flex:0; 写上0后导致缩小被挤占,不写则正常*/
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+/* 左侧子属性 */
+.attention {
+  flex:1;
+}
+.handle{
+  height: 100%;
+}
+
+.item{
+  width: 100%;
+  border:1px solid white;
+  border-radius:40px;
+   /* 自由伸长至底部 */
+  /* 内部文字垂直居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px #888888;
+}

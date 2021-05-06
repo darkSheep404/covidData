@@ -1,2 +1,35 @@
 <!--miniprogram/pages/index/index.wxml-->
-<text>miniprogram/pages/index/index.wxml</text>
+<view class="box">
+  <view class="header">
+    <cover-view class="title">
+      <cover-view>新冠疫苗已接种数量</cover-view>
+      <cover-view>2亿8962.7万/13亿6782万</cover-view>
+    </cover-view>
+    <view class="sudocontainer">
+      <view class="chartcontainer">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+      </view>
+    </view>
+    <cover-view class="tips">
+      <cover-view>人民的未来不该化为烈火下的灰烬</cover-view>
+      <cover-view>人类的每一次燃烧都应该为了更遥远的星空</cover-view>
+      <cover-view>via海南警方官微</cover-view>
+    </cover-view>
+
+  </view>
+  <view class="mid">
+    <view class="left">
+      <view class="condition item">
+        接种条件
+      </view>
+      <view class="attention item">
+      接种注意事项
+      </view>
+    </view>
+    <view class="right " bindtap="toccp">
+    <view class="handle item" >
+      风雨战疫
+    </view>
+    </view>
+  </view>
+</view>

@@ -1,66 +1,63 @@
-// miniprogram/pages/index/index.js
+import * as echarts from '../../ec-canvas/echarts';
+
+let chart = null;
+
+function initChart(canvas, width, height, dpr) {
+  
+  chart = echarts.init(canvas, null, {
+    width: width,
+    height: height,
+    devicePixelRatio: dpr, // new
+    darkmode:true
+  });
+  canvas.setChart(chart);
+  var option = {
+    darkmode:true,
+    tooltip: {
+        formatter: '{a} <br/>{b} : {c}%'
+    },
+    series: [{
+        name: 'Pressure',
+        type: 'gauge',
+        detail: {
+            formatter: '{value}'
+        },
+        data: [{
+            value: 21
+        }]
+    }]
+};
+//分割线
+//分割线
+  chart.setOption(option);
+  return chart;
+}
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    ec: {
+      onInit: initChart
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+ 
+  onShareAppMessage: function (res) {
+    return {
+      title: '新冠疫苗',
+      path: '/pages/index/index',
+      success: function () { },
+      fail: function () { }
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  toccp:function(event){
+    console.log("123");
+    wx.navigateTo({
+      url:'../ccp/index'
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onReady() {
+    setTimeout(function () {
+      // 获取 chart 实例的方式
+      // console.log(chart)
+    }, 2000);
   }
-})
+});
