@@ -54,6 +54,18 @@ Page({
       url:'../ccp/index'
     })
   },
+  tocondition:function(event){
+    console.log("123");
+    wx.navigateTo({
+      url:'../condition/index'
+    })
+  },
+  toattention:function(event){
+    console.log("123");
+    wx.navigateTo({
+      url:'../attention/index'
+    })
+  },
   onReady() {
     setTimeout(function () {
       // 获取 chart 实例的方式

@@ -25,3 +25,10 @@ image{
 page{
   height: 100%;
 }
+.down{
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  height: 48px;
+  width: 48px;
+}

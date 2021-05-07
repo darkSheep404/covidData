@@ -4,9 +4,10 @@
 <view style="text-align:center" wx:for="{{words[i]}}" class="motto">{{item}}</view>
 <image src="../../img/india.png" wx:if="{{india}}"></image>
 <view wx:if="{{india}}">印度举办累计700w人聚集的大壶节后</view>
-<view wx:if="{{india}}">每日新增确诊达30w</view>
+<view wx:if="{{india}}">每日新增确病例诊达30w</view>
 <image src="../../img/china.png" wx:if="{{china}}"></image>
 <view wx:if="{{china}}">4月25日</view>
 <view wx:if="{{china}}">搭载空号站核心舱的长征5号成功升空</view>
 </view>
+<image src="../../img/down.png" class="down"></image>
 </view>

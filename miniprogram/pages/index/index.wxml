@@ -19,10 +19,10 @@
   </view>
   <view class="mid">
     <view class="left">
-      <view class="condition item">
+      <view class="condition item" bindtap="tocondition">
         接种条件
       </view>
-      <view class="attention item">
+      <view class="attention item" bindtap="toattention">
       接种注意事项
       </view>
     </view>

@@ -1,0 +1,9 @@
+/* miniprogram/pages/condition/index.wxss */
+.title{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+text{
+  margin-left: 10px;
+}
